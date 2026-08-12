@@ -10,7 +10,11 @@ public class Productos
     private int stock;
     private int id_categorias;
 
-    //Constructor
+    //Constructor Vacio
+    public Productos() {
+    }
+
+    //Constructor completo
     public Productos(int id_producto, String nombre, String descripcion, double precio, int stock, int id_categorias)
     {
         this.id_producto = id_producto;

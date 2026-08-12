@@ -1,8 +1,8 @@
 package model;
 
-public class Clientes
-{
-    //Atributos
+public class Clientes {
+
+    // Atributos
     private int id_cliente;
     private String nombre;
     private String documento;
@@ -10,8 +10,13 @@ public class Clientes
     private String direccion;
     private String correo;
 
-    //Constructor
-    public Clientes(String correo, String direccion, String documento, int id_cliente, String nombre, String telefono) {
+    // Constructor vacío
+    public Clientes() {
+    }
+
+    // Constructor completo
+    public Clientes(String correo, String direccion, String documento,
+                    int id_cliente, String nombre, String telefono) {
         this.correo = correo;
         this.direccion = direccion;
         this.documento = documento;
@@ -20,7 +25,7 @@ public class Clientes
         this.telefono = telefono;
     }
 
-    //Getters y Setters
+    // Getters y Setters
     public int getId_cliente() {
         return id_cliente;
     }
